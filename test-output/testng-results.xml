@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-05T19:42:14 CDT" name="Default suite" finished-at="2025-07-05T19:42:17 CDT" duration-ms="2705">
+  <suite started-at="2025-07-08T11:04:22 CDT" name="Default suite" finished-at="2025-07-08T11:04:33 CDT" duration-ms="11297">
     <groups>
     </groups>
-    <test started-at="2025-07-05T19:42:14 CDT" name="Default test" finished-at="2025-07-05T19:42:17 CDT" duration-ms="2705">
-      <class name="com.hybridframework.cura.testcases.LoginApplication">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hybridframework.cura.testcases.LoginApplication@65fb9ffc]" started-at="2025-07-05T19:42:14 CDT" name="setUp" finished-at="2025-07-05T19:42:16 CDT" duration-ms="2060" status="PASS">
+    <test started-at="2025-07-08T11:04:22 CDT" name="Default test" finished-at="2025-07-08T11:04:33 CDT" duration-ms="11297">
+      <class name="com.hybridframework.cura.testcases.BookAppointment">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hybridframework.cura.testcases.BookAppointment@3e694b3f]" started-at="2025-07-08T11:04:22 CDT" name="setUp" finished-at="2025-07-08T11:04:24 CDT" duration-ms="2453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.hybridframework.cura.testcases.LoginApplication@65fb9ffc]" started-at="2025-07-05T19:42:16 CDT" name="loginWithValidCredentials" finished-at="2025-07-05T19:42:17 CDT" duration-ms="548" status="PASS">
+        <test-method signature="makeAnAppointment()[pri:0, instance:com.hybridframework.cura.testcases.BookAppointment@3e694b3f]" started-at="2025-07-08T11:04:24 CDT" name="makeAnAppointment" finished-at="2025-07-08T11:04:33 CDT" duration-ms="8475" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hybridframework.cura.testcases.LoginApplication@65fb9ffc]" started-at="2025-07-05T19:42:17 CDT" name="tearDown" finished-at="2025-07-05T19:42:17 CDT" duration-ms="84" status="PASS">
+        </test-method> <!-- makeAnAppointment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hybridframework.cura.testcases.BookAppointment@3e694b3f]" started-at="2025-07-08T11:04:33 CDT" name="tearDown" finished-at="2025-07-08T11:04:33 CDT" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.hybridframework.cura.testcases.LoginApplication -->
+      </class> <!-- com.hybridframework.cura.testcases.BookAppointment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

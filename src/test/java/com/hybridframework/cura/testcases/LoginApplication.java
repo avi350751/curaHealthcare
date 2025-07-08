@@ -5,23 +5,31 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+import pages.HomePage;
+import pages.LoginPage;
 
 public class LoginApplication extends BaseClass{
 	
+	HomePage homepage;
+	LoginPage loginpage;
 	
-	@Test
+	@Test(priority=1)
 	public void loginWithValidCredentials() {
 		
-        driver.findElement(By.id("btn-make-appointment")).click();
-		driver.findElement(By.id("txt-username")).sendKeys("John Doe");
-		driver.findElement(By.id("txt-password")).sendKeys("ThisIsNotAPassword");
-		driver.findElement(By.id("btn-login")).click();
+		homepage = new HomePage(driver);
+		loginpage = homepage.makeAppointment();
+		loginpage.loginToApplication("John Doe", "ThisIsNotAPassword");
+		
 		
 		Assert.assertTrue(driver.findElement(By.xpath("//h2[normalize-space()='Make Appointment']")).isDisplayed(),"Login failed");
-		driver.findElement(By.id("menu-toggle")).click();
-		driver.findElement(By.xpath("//a[normalize-space()='Logout']")).click();
 		
-		Assert.assertTrue(driver.getCurrentUrl().contains("herokuapp.com"),"Logout failed");
+	}
+	
+	@Test(priority=2)
+	public void verifyFooterLinks() {
+		
+		int count = homepage.countFooterLinks();
+		Assert.assertEquals(count,3, "footer links count mismatched");
 		
 	}
 
